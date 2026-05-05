@@ -262,7 +262,7 @@
 <body>
 
 <!-- Float WA -->
-<a href="https://wa.me/905057737170?text=Merhaba!%20Han%20Hal%C4%B1%20Y%C4%B1kama%27dan%20bilgi%20almak%20istiyorum." class="float-wa" target="_blank" title="WhatsApp">
+<a href="#" class="float-wa" target="_blank" title="WhatsApp">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
@@ -284,7 +284,7 @@
             <a href="#fiyatlar">Fiyatlar</a>
             <a href="#yorumlar">Yorumlar</a>
             <a href="#iletisim">İletişim</a>
-            <a href="https://wa.me/905057737170?text=Merhaba!%20Rezervasyon%20yapmak%20istiyorum." class="nav-cta" target="_blank">📲 Rezervasyon</a>
+            <a id="navWA" href="#" class="nav-cta" target="_blank">📲 Rezervasyon</a>
         </nav>
         <div class="hamburger" id="ham" onclick="toggleNav()"><span></span><span></span><span></span></div>
     </div>
@@ -296,7 +296,7 @@
     <a href="#fiyatlar" onclick="toggleNav()">Fiyatlar</a>
     <a href="#yorumlar" onclick="toggleNav()">Yorumlar</a>
     <a href="#iletisim" onclick="toggleNav()">İletişim</a>
-    <a href="https://wa.me/905057737170?text=Merhaba!%20Rezervasyon%20yapmak%20istiyorum." target="_blank">📲 Rezervasyon</a>
+    <a id="mobNavWA" href="#" target="_blank">📲 Rezervasyon</a>
 </div>
 
 <!-- HERO -->
@@ -307,7 +307,7 @@
             <h1 class="hero-title" id="heroTitle">Profesyonel<br><span class="hl">Halı & Koltuk</span><br>Yıkama Hizmetleri</h1>
             <p class="hero-desc" id="heroDesc">En son teknoloji makineler ve özel formüllü temizlik ürünleri ile halılarınızı, koltuk takımlarınızı, yatak-yorgan ve perdelerinizi tertemiz yapıyoruz. Güvenli, hızlı ve uygun fiyatlı.</p>
             <div class="hero-btns">
-                <a href="https://wa.me/905057737170?text=Merhaba!%20Fiyat%20teklifi%20almak%20istiyorum." class="btn btn-white" target="_blank">📲 Fiyat Al</a>
+                <a id="heroBtnWA" href="#" class="btn btn-white" target="_blank">📲 Fiyat Al</a>
                 <a href="#fiyatlar" class="btn btn-outline">💰 Fiyat Listesi</a>
             </div>
             <div class="hero-stats">
@@ -332,11 +332,7 @@
             <h2 class="sec-title">Ne Temizliyoruz?</h2>
             <p class="sec-sub">Geniş hizmet yelpazamizle evinizin tüm tekstillerini tertemiz yapıyoruz.</p>
         </div>
-
-<div class="services-grid" id="servicesGrid"></div>
-   
-
-        </div>
+        <div class="services-grid" id="servicesGrid"></div>
     </div>
 </section>
 
@@ -367,7 +363,7 @@
         </div>
         <div class="price-tabs" id="priceTabs"></div>
         <div id="pricePanels"></div>
-        <div class="price-note">⚠️ Fiyatlar büyüklük, kirlilik ve bölgeye göre değişebilir. Kesin fiyat için: <a id="priceNotePhone" href="https://wa.me/905057737170" target="_blank">+90 505 773 71 70</a></div>
+        <div class="price-note">⚠️ Fiyatlar büyüklük, kirlilik ve bölgeye göre değişebilir. Kesin fiyat için: <a id="priceNotePhone" href="#" target="_blank">+90 505 773 71 70</a></div>
     </div>
 </section>
 
@@ -457,7 +453,7 @@
                         <div class="cinfo-icon green">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="#16a34a"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                         </div>
-                        <div><div class="cinfo-lbl">WhatsApp</div><div class="cinfo-val"><a id="contactWA" href="https://wa.me/905057737170?text=Merhaba!%20Bilgi%20almak%20istiyorum." target="_blank">+90 505 773 71 70</a></div></div>
+                        <div><div class="cinfo-lbl">WhatsApp</div><div class="cinfo-val"><a id="contactWA" href="#" target="_blank">+90 505 773 71 70</a></div></div>
                     </div>
                     <div class="cinfo">
                         <div class="cinfo-icon blue">📞</div>
@@ -467,7 +463,7 @@
                         <div class="cinfo-icon insta" style="padding:0;">
                             <svg class="insta-svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                         </div>
-                        <div><div class="cinfo-lbl">Instagram</div><div class="cinfo-val"><a id="contactInsta" class="insta-link" href="https://www.instagram.com/hanhaliyikamaurfa/" target="_blank">@hanhaliyikamaurfa</a></div></div>
+                        <div><div class="cinfo-lbl">Instagram</div><div class="cinfo-val"><a id="contactInsta" class="insta-link" href="#" target="_blank">@hanhaliyikamaurfa</a></div></div>
                     </div>
                     <div class="cinfo">
                         <div class="cinfo-icon blue">⏰</div>
@@ -479,12 +475,12 @@
                 <h3>Hemen Rezervasyon Yap</h3>
                 <p>WhatsApp üzerinden kolayca rezervasyon yapabilir veya bilgi alabilirsiniz.</p>
                 <div class="booking-btns">
-                    <a id="bookingWA" href="https://wa.me/905057737170?text=Merhaba!%20Han%20Hal%C4%B1%20Y%C4%B1kama%27dan%20rezervasyon%20yapmak%20istiyorum." class="btn-wa" target="_blank">
+                    <a id="bookingWA" href="#" class="btn-wa" target="_blank">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                         WhatsApp ile Rezervasyon
                     </a>
-                    <a id="bookingCall" href="tel:+905057737170" class="btn-call">📞 Hemen Ara: +90 505 773 71 70</a>
-                    <a id="bookingInsta" href="https://www.instagram.com/hanhaliyikamaurfa/" class="btn-insta" target="_blank">
+                    <a id="bookingCall" href="#" class="btn-call">📞 Hemen Ara: +90 505 773 71 70</a>
+                    <a id="bookingInsta" href="#" class="btn-insta" target="_blank">
                         <svg class="insta-svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                         Instagram: @hanhaliyikamaurfa
                     </a>
@@ -508,9 +504,9 @@
                 </div>
                 <p>Profesyonel halı, koltuk, yatak, yorgan, battaniye ve stor perde yıkama hizmetleri. Modern ekipmanlar ve çevre dostu ürünlerle müşteri memnuniyeti odaklı hizmet sunuyoruz.</p>
                 <div class="footer-social">
-                    <a href="https://wa.me/905057737170" class="social-btn wa" target="_blank" title="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-                    <a href="https://www.instagram.com/hanhaliyikamaurfa/" class="social-btn insta" target="_blank" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-                    <a href="tel:+905057737170" class="social-btn tel" title="Telefon">📞</a>
+                    <a id="footerWA" href="#" class="social-btn wa" target="_blank" title="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                    <a id="footerInsta" href="#" class="social-btn insta" target="_blank" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    <a id="footerTel" href="#" class="social-btn tel" title="Telefon">📞</a>
                 </div>
             </div>
             <div class="footer-col">
@@ -527,9 +523,9 @@
             <div class="footer-col">
                 <h4>İletişim</h4>
                 <ul>
-                    <li><a href="tel:+905057737170">📞 +90 5057737170</a></li>
-                    <li><a href="https://wa.me/905057737170" target="_blank">💬 WhatsApp</a></li>
-                    <li><a href="https://www.instagram.com/hanhaliyikamaurfa/" target="_blank">📸 Instagram</a></li>
+                    <li><a id="fLinkTel" href="tel:+905057737170">📞 +90 5057737170</a></li>
+                    <li><a id="fLinkWA" href="#" target="_blank">💬 WhatsApp</a></li>
+                    <li><a id="fLinkInsta" href="#" target="_blank">📸 Instagram</a></li>
                     <li><a href="#konum">📍 Konumumuz</a></li>
                     <li><a href="admin.html">🔧 Yönetim Paneli</a></li>
                 </ul>
@@ -550,93 +546,41 @@ const firebaseConfig = {
     projectId: "hanhaliyikama-82fb5"
 };
 
-// Çift kurulum hatasını engelle
 if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
 }
 const db = firebase.firestore();
 
-/* ═══ 2. VARSAYILAN DEĞERLER VE YEREL HAFIZA ═══ */
+/* ═══ 2. VARSAYILAN DEĞERLER (Bağlantı Kurulana Kadar Geçici Gösterim) ═══ */
 const DEFAULT_SERVICES = [
     {id: 1, name: "Halı Yıkama", description: "Yün, ipek, makine dokuma her tür halı için özel yıkama. Leke çıkarma garantili.", icon: "🪣", startingPrice: "50 ₺/m²", prices: [{ item: "1–3 m²", price: "150 ₺" }, { item: "4–6 m²", price: "220 ₺" }]},
     {id: 2, name: "Koltuk Yıkama", description: "Tüm koltuk modelleri için derin temizlik ve dezenfeksiyon.", icon: "🛋️", startingPrice: "200 ₺", prices: [{ item: "Tekli / Berjer", price: "200 ₺" }, { item: "İkili Takım", price: "350 ₺" }]}
 ];
 
-const DEFAULT_CONTENT = {
-    heroLine1: "Profesyonel", heroHL: "Halı & Koltuk", heroLine3: "Yıkama Hizmetleri", 
-    heroDesc: "En son teknoloji makineler ve özel formüllü temizlik ürünleri ile halılarınızı, koltuk takımlarınızı, yatak-yorgan ve perdelerinizi tertemiz yapıyoruz.", 
-    heroBadge: "Türkiye'nin Güvenilir Temizlik Markası", 
-    stat1Num: "5.000+", stat1Lbl: "Mutlu Müşteri", stat2Num: "10+", stat2Lbl: "Yıl Deneyim", stat3Num: "%100", stat3Lbl: "Memnuniyet"
-};
-
-const DEFAULT_SETTINGS = {
-    phone: "+90 5057737170", phoneRaw: "905057737170", instagram: "https://www.instagram.com/hanhaliyikamaurfa/", workingHours: "Pzt – Cts: 08:00 – 20:00", footerText: "© 2024 Han Halı Yıkama. Tüm hakları saklıdır."
-};
-
-const DEFAULT_LOCATION = {
-    address: "Şanlıurfa", description: "Şanlıurfa genelinde hizmet veriyoruz.", mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102476.62!2d38.72!3d37.165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x153498f5de8c47d9%3A0x55d12ab7e60e2ebb!2zxZ5hbmzEsXVyZmE!5e0!3m2!1str!2str!4v1714000000000!5m2!1str!2str", workingHours: "Pzt – Cts: 08:00 – 20:00"
-};
-
-function get(key, def) { try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : def; } catch { return def; } }
-
-/* 🌟 YENİ: FİREBASE CANLI DEĞİŞKENLERİ (Hafıza şişmesini önler) 🌟 */
 let liveServices = null;
 let liveGallery = null;
 let liveVideos = null;
 
-/* ═══ 3. İÇERİK VE İLETİŞİM YÜKLEME ═══ */
-function loadContent() {
-    const c = get('hanhali_content', DEFAULT_CONTENT);
-    const s = get('hanhali_settings', DEFAULT_SETTINGS);
+/* ═══ 3. EFEKTLER & MENÜ ═══ */
+window.addEventListener('scroll', () => {
+    document.getElementById('hdr').classList.toggle('scrolled', scrollY > 60);
+    document.getElementById('scrollTop').classList.toggle('show', scrollY > 300);
+});
 
-    document.getElementById('heroBadge').textContent = c.heroBadge || DEFAULT_CONTENT.heroBadge;
-    document.getElementById('heroTitle').innerHTML = `${c.heroLine1 || DEFAULT_CONTENT.heroLine1}<br><span class="hl">${c.heroHL || DEFAULT_CONTENT.heroHL}</span><br>${c.heroLine3 || DEFAULT_CONTENT.heroLine3}`;
-    document.getElementById('heroDesc').textContent = c.heroDesc || DEFAULT_CONTENT.heroDesc;
-    
-    document.getElementById('stat1Num').textContent = c.stat1Num || DEFAULT_CONTENT.stat1Num;
-    document.getElementById('stat1Lbl').textContent = c.stat1Lbl || DEFAULT_CONTENT.stat1Lbl;
-    document.getElementById('stat2Num').textContent = c.stat2Num || DEFAULT_CONTENT.stat2Num;
-    document.getElementById('stat2Lbl').textContent = c.stat2Lbl || DEFAULT_CONTENT.stat2Lbl;
-    document.getElementById('stat3Num').textContent = c.stat3Num || DEFAULT_CONTENT.stat3Num;
-    document.getElementById('stat3Lbl').textContent = c.stat3Lbl || DEFAULT_CONTENT.stat3Lbl;
-    
-    const phone = s.phone || DEFAULT_SETTINGS.phone;
-    const phoneRaw = s.phoneRaw || DEFAULT_SETTINGS.phoneRaw;
-    const insta = s.instagram || DEFAULT_SETTINGS.instagram;
-    const hours = s.workingHours || DEFAULT_SETTINGS.workingHours;
-
-    document.getElementById('footerText').textContent = s.footerText || DEFAULT_SETTINGS.footerText;
-    document.getElementById('contactHours').textContent = hours;
-    document.getElementById('contactPhone').href = 'tel:+' + phoneRaw;
-    document.getElementById('contactPhone').textContent = phone;
-    document.getElementById('contactWA').href = `https://wa.me/${phoneRaw}?text=Merhaba!%20Bilgi%20almak%20istiyorum.`;
-    document.getElementById('contactWA').textContent = phone;
-    document.getElementById('contactInsta').href = insta;
-    
-    document.getElementById('bookingWA').href = `https://wa.me/${phoneRaw}?text=Merhaba!%20Rezervasyon%20yapmak%20istiyorum.`;
-    document.getElementById('bookingCall').href = 'tel:+' + phoneRaw;
-    document.getElementById('bookingCall').textContent = '📞 Hemen Ara: ' + phone;
-    document.getElementById('bookingInsta').href = insta;
-    
-    document.querySelector('.float-wa').href = `https://wa.me/${phoneRaw}?text=Merhaba!%20Han%20Hal%C4%B1%20Y%C4%B1kama%27dan%20bilgi%20almak%20istiyorum.`;
-    document.getElementById('mapPhone').href = 'tel:+' + phoneRaw;
-    document.getElementById('mapPhone').textContent = phone;
-    document.getElementById('mapHoursVal').textContent = hours;
+function toggleNav() {
+    document.getElementById('mobNav').classList.toggle('open');
 }
 
-function loadLocation() {
-    const loc = get('hanhali_location', DEFAULT_LOCATION);
-    document.getElementById('mapDesc').textContent = loc.description || DEFAULT_LOCATION.description;
-    document.getElementById('mapAddress').textContent = loc.description || DEFAULT_LOCATION.description;
-    document.getElementById('mapAddressVal').textContent = loc.address || DEFAULT_LOCATION.address;
-    if (loc.mapUrl) document.getElementById('mapIframe').src = loc.mapUrl;
-    if (loc.workingHours) document.getElementById('mapHoursVal').textContent = loc.workingHours;
+function initFade() {
+    const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: .1 });
+    document.querySelectorAll('.fade').forEach(el => obs.observe(el));
 }
 
 /* ═══ 4. HİZMETLERİ VE FİYATLARI BASTIRMA ═══ */
 function renderServices() {
-    // Firebase verisi varsa onu kullan, yoksa varsayılanı kullan
-    const svcs = liveServices || get('hanhali_services', DEFAULT_SERVICES);
+    const svcs = liveServices || DEFAULT_SERVICES;
     const grid = document.getElementById('servicesGrid');
     if (!grid) return;
 
@@ -651,7 +595,7 @@ function renderServices() {
 }
 
 function renderPricing() {
-    const svcs = liveServices || get('hanhali_services', DEFAULT_SERVICES);
+    const svcs = liveServices || DEFAULT_SERVICES;
     const tabs = document.getElementById('priceTabs');
     const panels = document.getElementById('pricePanels');
     
@@ -688,9 +632,8 @@ let activeCat = 'all';
 function renderGallery(cat) {
     activeCat = cat || 'all';
     
-    // Doğrudan Firebase'den gelen veriyi kullan (Çökme sorununu engeller)
-    const gallery = liveGallery || get('hanhali_gallery', []);
-    const videos = liveVideos || get('hanhali_videos', []);
+    const gallery = liveGallery || [];
+    const videos = liveVideos || [];
     
     const tabsEl = document.getElementById('galleryTabs');
     const gridEl = document.getElementById('galleryGrid');
@@ -783,76 +726,106 @@ function initBASliders() {
     });
 }
 
-/* ═══ 6. EFEKTLER ═══ */
-window.addEventListener('scroll', () => {
-    document.getElementById('hdr').classList.toggle('scrolled', scrollY > 60);
-    document.getElementById('scrollTop').classList.toggle('show', scrollY > 300);
-});
 
-function toggleNav() {
-    document.getElementById('mobNav').classList.toggle('open');
-}
-
-function initFade() {
-    const obs = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: .1 });
-    document.querySelectorAll('.fade').forEach(el => obs.observe(el));
-}
-
-/* ═══ 7. BAŞLATMA VE DOĞRUDAN FİREBASE BAĞLANTISI ═══ */
+/* ═══ 6. FIREBASE CANLI VERİ DİNLEME (HER ŞEYİ OTOMATİK GÜNCELLEYEN KISIM) ═══ */
 document.addEventListener('DOMContentLoaded', () => {
-    loadContent();
-    loadLocation();
-    renderServices();
-    renderPricing();
-    renderGallery('all');
-    setTimeout(initFade, 100);
+    
+    // 1) TELEFON VE İLETİŞİM BİLGİLERİNİ ÇEK
+    db.collection("settings").doc("contact").onSnapshot(doc => {
+        if(doc.exists) {
+            const s = doc.data();
+            const phone = s.phone || "+90 505 773 71 70";
+            const phoneRaw = s.phoneRaw || "905057737170";
+            const insta = s.instagram || "https://www.instagram.com/hanhaliyikamaurfa/";
+            const hours = s.workingHours || "Pzt – Cts: 08:00 – 20:00";
 
-    // Hizmetleri Çek
-    db.collection("services").onSnapshot(snapshot => {
-        const svcs = [];
-        snapshot.forEach(doc => { if (doc.data().id) svcs.push(doc.data()); });
-        liveServices = svcs; // Veriyi değişkene at, hafızaya değil!
-        renderServices();
-        renderPricing();
+            // Footer Alt Yazı & Saatler
+            if(document.getElementById('footerText')) document.getElementById('footerText').textContent = s.footerText || "© 2024 Han Halı Yıkama. Tüm hakları saklıdır.";
+            if(document.getElementById('contactHours')) document.getElementById('contactHours').textContent = hours;
+            
+            // Linkler ve Numaralar
+            document.querySelectorAll('#contactPhone, #mapPhone, #fLinkTel, #footerTel').forEach(el => { el.href = 'tel:+' + phoneRaw; if(el.id !== 'footerTel') el.textContent = phone; });
+            document.querySelectorAll('#contactWA, #priceNotePhone').forEach(el => { el.href = `https://wa.me/${phoneRaw}?text=Merhaba!%20Bilgi%20almak%20istiyorum.`; el.textContent = phone; });
+            document.querySelectorAll('#navWA, #mobNavWA, #heroBtnWA, #bookingWA, #footerWA').forEach(el => { el.href = `https://wa.me/${phoneRaw}?text=Merhaba!%20Rezervasyon%20yapmak%20istiyorum.`; });
+            
+            if(document.querySelector('.float-wa')) document.querySelector('.float-wa').href = `https://wa.me/${phoneRaw}?text=Merhaba!%20Bilgi%20almak%20istiyorum.`;
+            if(document.getElementById('bookingCall')) { document.getElementById('bookingCall').href = 'tel:+' + phoneRaw; document.getElementById('bookingCall').textContent = '📞 Hemen Ara: ' + phone; }
+            
+            // Instagram Bağlantıları
+            document.querySelectorAll('#contactInsta, #bookingInsta, #footerInsta, #fLinkInsta').forEach(el => { el.href = insta; });
+        }
     });
 
-    // Galeriyi Çek
-    db.collection("gallery").onSnapshot(snapshot => {
-        const gal = [];
-        snapshot.forEach(doc => { if (doc.data().id) gal.push(doc.data()); });
-        liveGallery = gal; // Veriyi değişkene at, hafızaya değil!
-        renderGallery(activeCat);
+    // 2) İÇERİĞİ VE YAZILARI ÇEK (Hero, İstatistikler)
+    db.collection("settings").doc("content").onSnapshot(doc => {
+        if(doc.exists) {
+            const c = doc.data();
+            if(document.getElementById('heroBadge')) document.getElementById('heroBadge').textContent = c.heroBadge || "Türkiye'nin Güvenilir Temizlik Markası";
+            if(document.getElementById('heroTitle')) document.getElementById('heroTitle').innerHTML = `${c.heroLine1 || "Profesyonel"}<br><span class="hl">${c.heroHL || "Halı & Koltuk"}</span><br>${c.heroLine3 || "Yıkama Hizmetleri"}`;
+            if(document.getElementById('heroDesc')) document.getElementById('heroDesc').textContent = c.heroDesc || "En son teknoloji makineler ve özel formüllü temizlik ürünleri ile halılarınızı, koltuk takımlarınızı, yatak-yorgan ve perdelerinizi tertemiz yapıyoruz.";
+            
+            if(document.getElementById('stat1Num')) document.getElementById('stat1Num').textContent = c.stat1Num || "5.000+";
+            if(document.getElementById('stat1Lbl')) document.getElementById('stat1Lbl').textContent = c.stat1Lbl || "Mutlu Müşteri";
+            if(document.getElementById('stat2Num')) document.getElementById('stat2Num').textContent = c.stat2Num || "10+";
+            if(document.getElementById('stat2Lbl')) document.getElementById('stat2Lbl').textContent = c.stat2Lbl || "Yıl Deneyim";
+            if(document.getElementById('stat3Num')) document.getElementById('stat3Num').textContent = c.stat3Num || "%100";
+            if(document.getElementById('stat3Lbl')) document.getElementById('stat3Lbl').textContent = c.stat3Lbl || "Memnuniyet";
+        }
     });
 
-    // Videoları Çek
-    db.collection("videos").onSnapshot(snapshot => {
-        const vids = [];
-        snapshot.forEach(doc => { if (doc.data().id) vids.push(doc.data()); });
-        liveVideos = vids; // Veriyi değişkene at, hafızaya değil!
-        renderGallery(activeCat);
+    // 3) KONUM VE HARİTAYI ÇEK
+    db.collection("settings").doc("location").onSnapshot(doc => {
+        if(doc.exists) {
+            const loc = doc.data();
+            if(document.getElementById('mapDesc')) document.getElementById('mapDesc').textContent = loc.description || "Şanlıurfa genelinde hizmet veriyoruz.";
+            if(document.getElementById('mapAddress')) document.getElementById('mapAddress').textContent = loc.description || "Şanlıurfa genelinde hizmet veriyoruz.";
+            if(document.getElementById('mapAddressVal')) document.getElementById('mapAddressVal').textContent = loc.address || "Şanlıurfa";
+            if(loc.mapUrl && document.getElementById('mapIframe')) document.getElementById('mapIframe').src = loc.mapUrl;
+            if(loc.workingHours && document.getElementById('mapHoursVal')) document.getElementById('mapHoursVal').textContent = loc.workingHours;
+        }
     });
 
-    // Logoyu Çek
+    // 4) LOGOYU ÇEK
     db.collection("settings").doc("logo").onSnapshot(doc => {
         if (doc.exists && doc.data().image) {
             const logoData = doc.data().image;
             const headerLogo = document.getElementById('logoImg');
-            if (headerLogo) {
-                headerLogo.src = logoData;
-                headerLogo.style.display = 'block';
-                document.getElementById('logoFallback').style.display = 'none';
-            }
+            if (headerLogo) { headerLogo.src = logoData; headerLogo.style.display = 'block'; document.getElementById('logoFallback').style.display = 'none'; }
             const footerLogo = document.querySelector('.footer-brand img');
-            if (footerLogo) {
-                footerLogo.src = logoData;
-                footerLogo.style.display = 'block';
-            }
+            if (footerLogo) { footerLogo.src = logoData; footerLogo.style.display = 'block'; }
         }
     });
+
+    // 5) HİZMETLERİ ÇEK
+    db.collection("services").onSnapshot(snapshot => {
+        const svcs = [];
+        snapshot.forEach(doc => { if (doc.data().id) svcs.push(doc.data()); });
+        liveServices = svcs; 
+        renderServices();
+        renderPricing();
+    });
+
+    // 6) GALERİYİ ÇEK
+    db.collection("gallery").onSnapshot(snapshot => {
+        const gal = [];
+        snapshot.forEach(doc => { if (doc.data().id) gal.push(doc.data()); });
+        liveGallery = gal;
+        renderGallery(activeCat);
+    });
+
+    // 7) VİDEOLARI ÇEK
+    db.collection("videos").onSnapshot(snapshot => {
+        const vids = [];
+        snapshot.forEach(doc => { if (doc.data().id) vids.push(doc.data()); });
+        liveVideos = vids;
+        renderGallery(activeCat);
+    });
+
+    // Geçici gösterimi başlat
+    renderServices();
+    renderPricing();
+    setTimeout(initFade, 100);
 });
-</script>
 </script>
 </body>
 </html>
