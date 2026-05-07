@@ -656,24 +656,35 @@ function renderGallery(cat) {
     if (!filtered.length && !videos.length) {
         gridEl.innerHTML = `<div class="gallery-empty" style="grid-column:1/-1"><div>📷</div><p>Henüz fotoğraf eklenmedi.</p></div>`;
     } else {
-        gridEl.innerHTML = filtered.map(g => `
-            <div class="gallery-card fade visible">
-                ${g.beforeImg ? `
-                <div class="ba-wrap" id="ba-${g.id}">
-                    <div class="ba-after"><img src="${g.afterImg}" alt="Sonra"></div>
-                    <div class="ba-before"><img src="${g.beforeImg}" alt="Önce"></div>
-                    <div class="ba-handle">⟺</div>
-                    <div class="ba-lbl l">Önce</div>
-                    <div class="ba-lbl r">Sonra</div>
-                </div>` : `
-                <img class="single-img" src="${g.afterImg}" alt="${g.title}">
-                <div class="gallery-card-info">
-                    <div class="gallery-card-title">${g.title}</div>
-                    ${g.description ? `<div class="gallery-card-desc">${g.description}</div>` : ''}
-                </div>
-                `}
-            </div>
-        `).join('');
+        gridEl.innerHTML = filtered.map(g => {
+            const desc = g.description || g.desc || '';
+            const title = g.title || '';
+            if (g.beforeImg) {
+                return `
+                <div class="gallery-card fade visible">
+                    <div class="ba-wrap" id="ba-${g.id}">
+                        <div class="ba-after"><img src="${g.afterImg}" alt="Sonra"></div>
+                        <div class="ba-before"><img src="${g.beforeImg}" alt="Önce"></div>
+                        <div class="ba-handle">⟺</div>
+                        <div class="ba-lbl l">Önce</div>
+                        <div class="ba-lbl r">Sonra</div>
+                    </div>
+                    <div class="gallery-card-info">
+                        <div class="gallery-card-title">${title}</div>
+                        ${desc ? `<div class="gallery-card-desc">${desc}</div>` : ''}
+                    </div>
+                </div>`;
+            } else {
+                return `
+                <div class="gallery-card fade visible">
+                    <img class="single-img" src="${g.afterImg}" alt="${title}">
+                    <div class="gallery-card-info">
+                        <div class="gallery-card-title">${title}</div>
+                        ${desc ? `<div class="gallery-card-desc">${desc}</div>` : ''}
+                    </div>
+                </div>`;
+            }
+        }).join('');
         initBASliders();
     }
 
@@ -709,6 +720,7 @@ function initBASliders() {
         wrap.dataset.init = '1';
         
         const before = wrap.querySelector('.ba-before');
+        const bImg = before.querySelector('img');
         const handle = wrap.querySelector('.ba-handle');
         let dragging = false;
 
@@ -716,13 +728,22 @@ function initBASliders() {
             const r = wrap.getBoundingClientRect();
             let pct = Math.max(5, Math.min(95, (clientX - r.left) / r.width * 100));
             before.style.width = pct + '%';
-            handle.style.left = 'calc(' + pct + '% + ' + (-2) + 'px)';
+            // Fotoğrafın bozulmaması için genişliği dinamik hesapla
+            if (bImg) bImg.style.width = (10000 / pct) + '%';
+            handle.style.left = 'calc(' + pct + '% - 2px)';
         }
 
-        handle.addEventListener('mousedown', e => { dragging = true; e.preventDefault(); });
+        // Başlangıçta handle'ı ortaya al
+        requestAnimationFrame(() => {
+            const r = wrap.getBoundingClientRect();
+            setPos(r.left + r.width * 0.5);
+        });
+
+        // Tüm alan sürüklenebilir (sadece handle değil)
+        wrap.addEventListener('mousedown', e => { dragging = true; e.preventDefault(); setPos(e.clientX); });
         document.addEventListener('mousemove', e => { if (dragging) setPos(e.clientX); });
         document.addEventListener('mouseup', () => { dragging = false; });
-        handle.addEventListener('touchstart', e => { dragging = true; e.preventDefault(); }, { passive: false });
+        wrap.addEventListener('touchstart', e => { dragging = true; setPos(e.touches[0].clientX); }, { passive: true });
         document.addEventListener('touchmove', e => { if (dragging) setPos(e.touches[0].clientX); }, { passive: true });
         document.addEventListener('touchend', () => { dragging = false; });
     });
@@ -827,6 +848,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderServices();
     renderPricing();
     setTimeout(initFade, 100);
+
 });
 </script>
 </body>
