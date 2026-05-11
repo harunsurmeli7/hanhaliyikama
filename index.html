@@ -213,27 +213,41 @@
 
     /* ─── FLOAT WA ─── */
 /* ─── FLOAT TELEFON (YENİ) ─── */
+    /* ─── FLOAT TELEFON (GÜNCELLENDİ) ─── */
     .float-tel {
-        position: fixed;
-        bottom: 106px; /* WhatsApp butonunun 16px üstünde */
-        right: 28px;
-        width: 62px;
-        height: 62px;
-        background: var(--primary); /* Temanın mavi rengi */
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        position: fixed !important;
+        bottom: 106px !important;
+        right: 28px !important;
+        width: 62px !important;
+        height: 62px !important;
+        background: var(--primary) !important;
+        border-radius: 50% !important; /* Kusursuz yuvarlak için */
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
         box-shadow: 0 4px 20px rgba(26, 86, 219, 0.5);
         z-index: 997;
         text-decoration: none;
         transition: all 0.3s;
         animation: telPulse 2.5s infinite;
-        animation-delay: 1.25s; /* WA animasyonuyla aynı anda parlamaması için gecikme */
+        animation-delay: 1.25s;
+        overflow: hidden; /* Dışarı taşmaları engeller */
     }
     .float-tel:hover {
         transform: scale(1.12);
         box-shadow: 0 8px 32px rgba(26, 86, 219, 0.7);
+    }
+    @keyframes telPulse {
+        0%, 100% { box-shadow: 0 4px 20px rgba(26, 86, 219, 0.5); }
+        50% { box-shadow: 0 4px 40px rgba(26, 86, 219, 0.85), 0 0 0 12px rgba(26, 86, 219, 0.1); }
+    }
+    .float-tel svg {
+        width: 28px !important;
+        height: 28px !important;
+        fill: #fff !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
     }
     @keyframes telPulse {
         0%, 100% { box-shadow: 0 4px 20px rgba(26, 86, 219, 0.5); }
